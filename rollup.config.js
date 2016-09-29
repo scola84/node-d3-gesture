@@ -10,7 +10,7 @@ export default {
   },
   plugins: [
     resolve({
-      skip: ['d3-selection']
+      'jsnext': true
     }),
     commonjs(),
     buble()
