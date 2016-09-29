@@ -3,14 +3,13 @@ import commonjs from 'rollup-plugin-commonjs';
 import resolve from 'rollup-plugin-node-resolve';
 
 export default {
+  dest: './dist/d3-gesture.js',
   entry: 'index.js',
   format: 'umd',
-  globals: {
-    'd3-selection': 'd3'
-  },
+  moduleName: 'd3',
   plugins: [
     resolve({
-      'jsnext': true
+      jsnext: true
     }),
     commonjs(),
     buble()
