@@ -1,4 +1,4 @@
-import { selection } from 'd3-selection';
+import { selection } from 'd3';
 import Hammer from 'hammerjs';
 import propagating from 'propagating-hammerjs';
 
